@@ -7,10 +7,17 @@
             const context = new (window.AudioContext || window.webkitAudioContext)();
 
             const notes = [
-                { frequency: 261.63, duration: 0.5 }, // C4
-                { frequency: 293.66, duration: 0.5 }, // D4
-                { frequency: 329.63, duration: 0.5 }, // E4
+                { frequency: 392.00, duration: 0.5 }, // G4
+                { frequency: 392.00, duration: 0.5 }, // G4
+                { frequency: 440.00, duration: 0.5 }, // A4
+                { frequency: 392.00, duration: 0.5 }, // G4
                 { frequency: 349.23, duration: 0.5 }, // F4
+                { frequency: 329.63, duration: 0.5 }, // E4
+                { frequency: 392.00, duration: 0.5 }, // G4
+                { frequency: 392.00, duration: 0.5 }, // G4
+                { frequency: 440.00, duration: 0.5 }, // A4
+                { frequency: 392.00, duration: 0.5 }, // G4
+                { frequency: 440.00, duration: 0.5 }, // A4
                 { frequency: 392.00, duration: 0.5 }, // G4
             ];
 
