@@ -1,83 +1,53 @@
-body { 
-    margin: 0; 
-    font-family: 'Arial', sans-serif; 
-    background: linear-gradient(to bottom, #1e3c72, #2a5298), 
-                url('https://image.stern.de/9524462/t/yS/v2/w1440/r1.7778/-/weihnachtsmann.jpg') no-repeat center top; 
-    background-size: cover; 
-    color: white; 
-    text-align: center; 
-    overflow: hidden; 
-    position: relative; 
-}
-
-h1 { 
-    font-size: 3rem; 
-    margin-top: 50px; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-}
-
-.message { 
-    font-size: 1.5rem; 
-    margin: 20px 0; 
-}
-
-.animation-toggle { 
-    padding: 10px 20px; 
-    font-size: 1rem; 
-    background-color: #ff6f61; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    margin-top: 20px; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-}
-
-.animation-toggle:hover { 
-    background-color: #ff4436; 
-}
-
-.animation-toggle:focus { 
-    outline: 2px solid white; 
-    outline-offset: 2px; 
-}
-
-.snowflake { 
-    position: absolute; 
-    top: -10px; 
-    font-size: 1.5rem; 
-    color: white; 
-    animation: fall linear infinite; 
-}
-
-@keyframes fall { 
-    0% { 
-        transform: translateY(-10px) rotate(0deg); 
-    } 
-    100% { 
-        transform: translateY(100vh) rotate(360deg); 
-    } 
-}
-
-@keyframes twinkle { 
-    0%, 100% { 
-        opacity: 0.8; 
-    } 
-    50% { 
-        opacity: 1; 
-    } 
-}
-
-.star { 
-    position: absolute; 
-    width: 3px; 
-    height: 3px; 
-    background-color: white; 
-    border-radius: 50%; 
-    animation: twinkle 2s infinite; 
-    box-shadow: 0 0 10px white;
-}
-
+   body { 
+       margin: 0; 
+       font-family: 'Arial', sans-serif; 
+       background: linear-gradient(to bottom, #20603d, #2a5298); 
+       color: white; 
+       text-align: center; 
+       overflow: hidden; 
+   } 
+   h1 { 
+       font-size: 3rem; 
+       margin-top: 50px; 
+       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+   } 
+   .message { 
+       font-size: 1.5rem; 
+       margin: 20px 0; 
+   } 
+   .animation-toggle { 
+       padding: 10px 20px; 
+       font-size: 1rem; 
+       background-color: #ff6f61; 
+       color: white; 
+       border: none; 
+       border-radius: 5px; 
+       cursor: pointer; 
+       margin-top: 20px; 
+       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+   } 
+   .animation-toggle:hover { 
+       background-color: #ff4436; 
+   } 
+   .animation-toggle:focus { 
+       outline: 2px solid white; 
+       outline-offset: 2px; 
+   } 
+   .snowflake { 
+       position: absolute; 
+       top: -10px; 
+       font-size: 1.5rem; 
+       color: white; 
+       animation: fall linear infinite; 
+   } 
+   @keyframes fall { 
+       0% { 
+           transform: translateY(-10px) rotate(0deg); 
+       } 
+       100% { 
+           transform: translateY(100vh) rotate(360deg); 
+       } 
+   } 
 @media (max-width: 600px) { 
     h1 { 
         font-size: 2rem; 
