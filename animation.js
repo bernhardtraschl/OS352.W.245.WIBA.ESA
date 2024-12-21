@@ -1,4 +1,3 @@
-    <script> 
 
         console.log("JavaScript geladen!"); 
 
@@ -139,6 +138,4 @@
 
         startSnowfall(); // Schneeflocken beim Laden starten 
         window.toggleSnowfall = toggleSnowfall;
-        
 
-    </script> 
