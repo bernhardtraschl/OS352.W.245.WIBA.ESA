@@ -1,4 +1,3 @@
-
    body { 
        margin: 0; 
        font-family: 'Arial', sans-serif; 
@@ -30,6 +29,10 @@
    .animation-toggle:hover { 
        background-color: #ff4436; 
    } 
+   .animation-toggle:focus { 
+       outline: 2px solid white; 
+       outline-offset: 2px; 
+   } 
    .snowflake { 
        position: absolute; 
        top: -10px; 
@@ -45,3 +48,11 @@
            transform: translateY(100vh) rotate(360deg); 
        } 
    } 
+@media (max-width: 600px) { 
+    h1 { 
+        font-size: 2rem; 
+    } 
+    .message { 
+        font-size: 1rem; 
+    } 
+}
