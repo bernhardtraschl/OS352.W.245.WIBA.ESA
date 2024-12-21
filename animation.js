@@ -2,7 +2,43 @@
 
         console.log("JavaScript geladen!"); 
 
-         
+                 // Funktion zur Erstellung einer Melodie
+        function playMelody() {
+            const context = new (window.AudioContext || window.webkitAudioContext)();
+
+            const notes = [
+                { frequency: 261.63, duration: 0.5 }, // C4
+                { frequency: 293.66, duration: 0.5 }, // D4
+                { frequency: 329.63, duration: 0.5 }, // E4
+                { frequency: 349.23, duration: 0.5 }, // F4
+                { frequency: 392.00, duration: 0.5 }, // G4
+            ];
+
+            let currentTime = context.currentTime;
+
+            notes.forEach(note => {
+                const oscillator = context.createOscillator();
+                const gainNode = context.createGain();
+
+                oscillator.type = 'sine'; // Klangart
+                oscillator.frequency.setValueAtTime(note.frequency, currentTime);
+                oscillator.connect(gainNode);
+                gainNode.connect(context.destination);
+
+                // Lautstärke langsam ein- und ausblenden
+                gainNode.gain.setValueAtTime(0, currentTime);
+                gainNode.gain.linearRampToValueAtTime(0.5, currentTime + 0.1);
+                gainNode.gain.linearRampToValueAtTime(0, currentTime + note.duration);
+
+                oscillator.start(currentTime);
+                oscillator.stop(currentTime + note.duration);
+
+                currentTime += note.duration;
+            });
+        }
+
+        // Event-Listener für den Button
+        document.getElementById('playButton').addEventListener('click', playMelody);
 
         const body = document.querySelector('body'); 
 
@@ -12,7 +48,7 @@
 
         let snowInterval; 
 
-  
+      
 
         function createSnowflake() { 
 
@@ -93,5 +129,7 @@
   
 
         startSnowfall(); // Schneeflocken beim Laden starten 
+
+        
 
     </script> 
