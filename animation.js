@@ -55,7 +55,9 @@
 
         let snowInterval; 
 
-      
+      (() => {
+        let snowing = true;
+        let snowInterval;
 
         function createSnowflake() { 
 
@@ -133,10 +135,10 @@
 
         } 
 
-  
+        })();
 
         startSnowfall(); // Schneeflocken beim Laden starten 
-
+        window.toggleSnowfall = toggleSnowfall;
         
 
     </script> 
