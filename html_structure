@@ -21,6 +21,9 @@
       <p class="message">Möge dein Weihnachten voller Freude, Liebe und Magie sein.</p> 
     
       <button class="animation-toggle" onclick="toggleSnowfall()">Schneeflocken anhalten</button> 
+
+      <h1>Melodie Abspielen</h1>
+      <button id="playButton">Play Melodie</button>
   
   </body> 
 
