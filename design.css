@@ -1,13 +1,19 @@
-   body { 
-       margin: 0; 
-       font-family: 'Arial', sans-serif; 
-       background: linear-gradient(to bottom, #6d2331, #327020, #F5F5F5);
-       background-size: 100% 100%;
-       background-repeat: no-repeat;
-       color: white; 
-       text-align: center; 
-       overflow: hidden; 
-   } 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* HTML- und Body-Höhe auf 100% setzen */
+    width: 100%; /* Für Vollbildbreite */
+    overflow: hidden; /* Verhindert Scrollen */
+}
+
+body {
+    background: linear-gradient(to bottom, #6d2331, #327020, #F5F5F5); /* Farbverlauf */
+    background-size: 100% 100%; /* Hintergrund auf gesamte Höhe und Breite strecken */
+    background-repeat: no-repeat; /* Keine Wiederholung des Verlaufs */
+    text-align: center;
+    color: white;
+}
+
    h1 { 
        font-size: 3rem; 
        margin-top: 50px; 
