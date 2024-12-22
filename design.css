@@ -62,8 +62,8 @@
       
       .tree-trunk {
           position: absolute;
-          bottom: -10px; /* Stamm passend platzieren */
-          left: 40%; /* Stamm unter dem Baum zentrieren */
+          bottom: -30px; /* Stamm passend platzieren */
+          left: 50%; /* Stamm unter dem Baum zentrieren */
           width: 40px; /* Breiterer Stamm */
           height: 50px; /* Höherer Stamm */
           background-color: #8b4513;
