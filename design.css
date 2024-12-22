@@ -149,7 +149,7 @@
 /* CSS für das Rentier */
 .reindeer {
     position: absolute;
-    bottom: 10%;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
