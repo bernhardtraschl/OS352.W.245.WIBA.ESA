@@ -57,25 +57,103 @@ body {
        } 
    }
 
-      .christmas-tree {
-          position: absolute;
-          bottom: 60px; /* Baum leicht anheben */
-          left: 12%; /* Baum näher zur Mitte */
-          width: 150px; /* Breiter */
-          height: 220px; /* Höher */
-          background: linear-gradient(to top, #2e8b57, #3cb371);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      }
-      
-      .tree-trunk {
-          position: absolute;
-          bottom: -30px; /* Stamm passend platzieren */
-          left: 37.5%; /* Stamm unter dem Baum zentrieren */
-          width: 40px; /* Breiterer Stamm */
-          height: 60px; /* Höherer Stamm */
-          background-color: #8b4513;
-      } 
+     /* Weihnachtsbaum */
+.christmas-tree {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* Baum-Ebenen */
+.tree-layers {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree-layers .layer {
+    background-color: green;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 50px solid green;
+    margin-top: -15px;
+}
+
+.tree-layers .layer:nth-child(1) {
+    transform: translateY(-10px);
+}
+.tree-layers .layer:nth-child(2) {
+    transform: translateY(-20px);
+}
+.tree-layers .layer:nth-child(3) {
+    transform: translateY(-30px);
+}
+
+/* Baumstamm */
+.tree-trunk {
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Dekoration */
+.tree-decorations {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.tree-decorations .ornament {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.tree-decorations .ornament.red {
+    background-color: red;
+    top: 20%;
+    left: 30%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.tree-decorations .ornament.gold {
+    background-color: gold;
+    top: 40%;
+    left: 60%;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.tree-decorations .ornament.blue {
+    background-color: blue;
+    top: 60%;
+    left: 40%;
+    animation: bounce 4s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
    .snowman {
     position: absolute;
     bottom: 60px;
