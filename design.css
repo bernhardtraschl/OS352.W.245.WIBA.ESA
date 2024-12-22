@@ -51,10 +51,10 @@
 
    .christmas-tree { 
        position: absolute; 
-       bottom: 20px; 
-       left: 20%; 
-       width: 100px; 
-       height: 150px; 
+       bottom: 50px; 
+       left: 10%; 
+       width: 150px; 
+       height: 200px; 
        background: linear-gradient(to top, #2e8b57, #3cb371); 
        clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
@@ -63,58 +63,86 @@
        position: absolute; 
        bottom: 0; 
        left: 45%; 
-       width: 20px; 
-       height: 30px; 
+       width: 30px; 
+       height: 40px; 
        background-color: #8b4513; 
    } 
-   .snowman { 
-       position: absolute; 
-       bottom: 20px; 
-       right: 20%; 
-       display: flex; 
-       flex-direction: column; 
-       align-items: center; 
-   } 
-   .snowman .body { 
-       width: 80px; 
-       height: 80px; 
-       background-color: white; 
-       border-radius: 50%; 
-       border: 2px solid #ccc; 
-       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-   } 
-   .snowman .head { 
-       width: 50px; 
-       height: 50px; 
-       background-color: white; 
-       border-radius: 50%; 
-       border: 2px solid #ccc; 
-       margin-top: -20px; 
-   } 
-   .snowman .eye { 
-       width: 5px; 
-       height: 5px; 
-       background-color: black; 
-       border-radius: 50%; 
-       position: absolute; 
-   } 
-   .snowman .eye.left { 
-       left: 15px; 
-       top: 15px; 
-   } 
-   .snowman .eye.right { 
-       left: 30px; 
-       top: 15px; 
-   } 
-   .snowman .carrot { 
-       width: 10px; 
-       height: 10px; 
-       background-color: orange; 
-       clip-path: polygon(50% 0%, 100% 100%, 0% 100%); 
-       position: absolute; 
-       top: 20px; 
-       left: 20px; 
-   }
+.snowman {
+    position: absolute;
+    bottom: 50px; /* Schneemann leicht höher setzen */
+    right: 15%; /* Schneemann weiter ins Bild rücken */
+    display: flex;
+    flex-direction: column-reverse; /* Reihenfolge ändern: großer Körper unten */
+    align-items: center;
+}
+
+.snowman .body {
+    width: 70px; /* Kleiner Körper (ehemaliger Kopf) */
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.snowman .head {
+    width: 100px; /* Großer Kopf (ehemaliger Körper) */
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: -30px; /* Kopf passend auf den Körper setzen */
+    position: relative;
+}
+
+.snowman .eye {
+    width: 8px; /* Größere Augen */
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.snowman .eye.left {
+    left: 25px; /* Linkes Auge */
+    top: 25px;
+}
+
+.snowman .eye.right {
+    left: 55px; /* Rechtes Auge */
+    top: 25px;
+}
+
+.snowman .carrot {
+    width: 15px; /* Größere Karottennase */
+    height: 15px;
+    background-color: orange;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    top: 50px; /* Nase passend platzieren */
+    left: 42px;
+}
+
+/* Zylinderhut */
+.snowman .hat {
+    position: absolute;
+    top: -50px; /* Über dem Kopf */
+    width: 70px; /* Breite des Zylinders */
+    height: 50px; /* Höhe des Zylinders */
+    background-color: black;
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+}
+
+.snowman .hat::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Basis des Zylinders */
+    left: -10px; /* Überstehende Basis */
+    width: 90px; /* Breitere Basis */
+    height: 10px;
+    background-color: black;
+    border-radius: 10px; /* Runde Basis */
+}
 
 @media (max-width: 600px) { 
     h1 { 
