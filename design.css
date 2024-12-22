@@ -242,15 +242,6 @@
     border-radius: 5px;
 }
 
-.reindeer .leg.front-left {
-    margin-right: 10px;
-}
-
-.reindeer .leg.front-right {
-    margin-left: 10px;
-}
-
-
 @media (max-width: 600px) { 
     h1 { 
         font-size: 2rem; 
