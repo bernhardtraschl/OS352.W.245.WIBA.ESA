@@ -59,7 +59,7 @@ body {
 
      /* Weihnachtsbaum */
 .christmas-tree {
-    position: absolut;
+    position: absolute;
     bottom: 60px;
     left: 12%; 
     width: 150px;
