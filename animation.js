@@ -31,6 +31,7 @@
             snowInterval = null; 
             console.log("Schneeflocken angehalten"); 
         } 
+        document.querySelectorAll('.snowflake').forEach(snowflake => snowflake.remove());
     } 
 
     function toggleSnowfall() { 
