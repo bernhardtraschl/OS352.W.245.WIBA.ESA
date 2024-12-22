@@ -63,9 +63,9 @@
       .tree-trunk {
           position: absolute;
           bottom: -30px; /* Stamm passend platzieren */
-          left: 50%; /* Stamm unter dem Baum zentrieren */
+          left: 25%; /* Stamm unter dem Baum zentrieren */
           width: 40px; /* Breiterer Stamm */
-          height: 50px; /* Höherer Stamm */
+          height: 60px; /* Höherer Stamm */
           background-color: #8b4513;
       } 
    .snowman {
