@@ -127,8 +127,8 @@
 /* Zylinderhut */
 .snowman .hat {
     position: absolute;
-    top: -60px;
-    width: 80px;
+    top: -50px;
+    width: 60px;
     height: 40px;
     background-color: black;
     border-radius: 5px;
@@ -137,10 +137,10 @@
 .snowman .hat::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: -10px;
-    width: 100px;
-    height: 10px;
+    width: 80px;
+    height: 8px;
     background-color: black;
     border-radius: 10px;
 }
