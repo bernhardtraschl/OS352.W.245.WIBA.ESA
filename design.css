@@ -73,7 +73,7 @@ body {
 /* Baum-Ebenen */
 .tree-layers {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,7 @@ body {
 /* Baumstamm */
 .tree-trunk {
     background-color: brown;
+    bottom: 60px;
     width: 30px;
     height: 50px;
     margin: 0 auto;
