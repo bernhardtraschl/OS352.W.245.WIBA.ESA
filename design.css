@@ -157,8 +157,9 @@ body {
 /* CSS für das Rentier */
 .reindeer {
     position: absolute;
-    bottom: 60px;
+    bottom: 60px; /* Höhe bleibt unverändert */
     left: 50%;
+    transform: translateX(-50%); /* Horizontale Zentrierung */
     display: flex;
     flex-direction: column;
     align-items: center;
