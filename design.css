@@ -60,9 +60,14 @@ body {
      /* Weihnachtsbaum */
 .christmas-tree {
     position: relative;
+    bottom: 60px;
+    left: 12%; 
     width: 150px;
-    height: 200px;
+    height: 220px;
     margin: 0 auto;
+    background: linear-gradient(to top, #2e8b57, #3cb371);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Baum-Ebenen */
